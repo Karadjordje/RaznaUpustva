@@ -7,7 +7,6 @@ Kod ispod ce resiti:
 2. Enable gzip compression
 Ubrzace vas sajt i povecace vam ocenu
 
-<code>
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -54,4 +53,3 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
 
 # END WordPress
-</code>
