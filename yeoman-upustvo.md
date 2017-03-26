@@ -23,7 +23,7 @@ gulp serve:dist (za pregled produkcije)<br>
 ctrl c (prekidas procese)<br>
 
 Kad nastavljas da radis samo udjes u folder otvoris gitbash i kucas gulp serve<br>
-Kad oces da instaliras neki jq pluggin kucas bower install i on ce ti se pojaviti u bower folderu i ti jos treba da dodas link u indexu (yeoman to sam radi, ali zna da baguje)
+Kad oces da instaliras neki js pluggin kucas bower install i on ce ti se pojaviti u bower folderu i ti jos treba da dodas link u indexu (yeoman to sam radi, ali zna da baguje)
 
 Kako se radi u njemu (SASS):
 1. Imas main scss: u njemu kucas recimo @import header (gde je header ID iz index.html-a). Na taj ubacujes delice scss-a u main gde se sklapaju.
