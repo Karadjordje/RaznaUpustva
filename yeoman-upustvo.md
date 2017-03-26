@@ -16,6 +16,7 @@ yo webapp (Ovde cepas samo Enter kad se pojavi cikica neki)<br>
 gulp serve (Da vidis/gledas promene)<br>
 bower install --save <package>  (ime paketa koji oces da isntaliras)<br>
 gulp (kad oces da izgradis projekat)<br>
+
 Jos neke komande:<br>
 gulp serve:test (za testiranje u browser-u)<br>
 gulp serve:dist (za pregled produkcije)<br>
