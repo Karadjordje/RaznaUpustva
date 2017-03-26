@@ -1,13 +1,13 @@
-Upustvo za backup sajtova:
-Prvi deo:
+Upustvo za backup sajtova:<br>
+Prvi deo:<br>
 
-https://www.inmotionhosting.com/support/edu/cpanel/cpanel-file-manager/complete-cpanel-backup
-https://www.inmotionhosting.com/support/website/backup-and-restore/backup-website-files-in-cpanel
-https://www.inmotionhosting.com/support/website/backup-and-restore/backup-your-database-in-cpanel
+https://www.inmotionhosting.com/support/edu/cpanel/cpanel-file-manager/complete-cpanel-backup<br>
+https://www.inmotionhosting.com/support/website/backup-and-restore/backup-website-files-in-cpanel<br>
+https://www.inmotionhosting.com/support/website/backup-and-restore/backup-your-database-in-cpanel<br>
 
 
-Drugi deo - Namestis crone job (nalazi u sekciji Advanced u cPanel-u):
-https://www.ericzhang.me/howto-cpanel-automatic-backups/
+Drugi deo - Namestis crone job (nalazi u sekciji Advanced u cPanel-u):<br>
+https://www.ericzhang.me/howto-cpanel-automatic-backups/<br>
 
 Prvo napravis fajl sa nazivom backup-cpanel.php (fajlove treba pisati malim slovima) i kopiras code ispod u njega
 
@@ -62,10 +62,10 @@ Prvo napravis fajl sa nazivom backup-cpanel.php (fajlove treba pisati malim slov
 		?>
 
 
-Onda odes u crone izaberes prvog i petnaestog u mesecu, zatim na mestu gde pise command ubacis sl.kod:
+Onda odes u crone izaberes prvog i petnaestog u mesecu, zatim na mestu gde pise command ubacis sl.kod:<br>
 
-php -f ~/backup-cpanel.php
+php -f ~/backup-cpanel.php<br>
 
-Onda ides Add New Crone Job
+Onda ides Add New Crone Job<br>
 
 KRAJ
