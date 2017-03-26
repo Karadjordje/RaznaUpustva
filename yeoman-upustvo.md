@@ -9,7 +9,7 @@ Sta sve treba instalirati za koriscenje yeoman-a (https://github.com/yeoman/gene
 
 Kako koristis:<br>
 Udjes u source tree ides clone/new i kopiras sa githab-a (napravis repozitorum tamo) link<br>
-Onda ukljucis git bash u folderu gde radis i kucas sledece (getting startet upustvo preuzeto sa https://github.com/yeoman/generator-webapp):
+Onda ukljucis git bash u folderu gde radis i kucas sledece (getting started upustvo preuzeto sa https://github.com/yeoman/generator-webapp):
 
 npm install --global yo gulp-cli bower generator-webapp<br>
 yo webapp (Ovde cepas samo Enter kad se pojavi cikica neki)<br>
