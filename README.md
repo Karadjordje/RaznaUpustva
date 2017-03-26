@@ -1,7 +1,7 @@
 # RaznaUpustva
 U ovom fajlu postoje upustva za razne stvari koje korisim
 <hr>
-Upustvo za praljenje backup-a:<br>
+Upustvo za pravljenje backup-a:<br>
 https://github.com/Karadjordje/RaznaUpustva/blob/master/backup-site.md
 <hr>
 Primer izgleda .htaccess fajla za staticki sajt<br>
