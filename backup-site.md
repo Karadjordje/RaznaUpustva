@@ -73,14 +73,14 @@ KRAJ
 
 Malo prosirenje napravi jos jedan fajl sa imenom 'delete-old-backups.php' i kopiras code ispod u njega:
 
-<?php
-    $files = glob("*.tar.gz");
-    foreach($files as $file) {
-        if(is_file($file)
-        && time() - filemtime($file) >= 16*24*60*60) { // 16 days
-            unlink($file);
-        }
-    }
-?>  
+	<?php
+	    $files = glob("*.tar.gz");
+	    foreach($files as $file) {
+	        if(is_file($file)
+	        && time() - filemtime($file) >= 16*24*60*60) { // 16 days
+	            unlink($file);
+	        }
+	    }
+	?>  
 
 Ovo ce ti brisati stare backup fajlove
