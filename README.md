@@ -12,3 +12,6 @@ https://github.com/Karadjordje/RaznaUpustva/blob/master/htacessPrimerZaWP.md
 <hr>
 Upustvo za koriscenje yeoman webapp-a<br>
 https://github.com/Karadjordje/RaznaUpustva/blob/master/yeoman-upustvo.md
+<hr>
+Upustvo za rad mysql databazama u terminalu<br>
+https://github.com/Karadjordje/RaznaUpustva/blob/master/mysql-terminal-upustvo.md
