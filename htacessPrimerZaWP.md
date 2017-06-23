@@ -47,7 +47,7 @@ Ubrzace vas sajt i povecace vam ocenu<br>
 		AddOutputFilterByType DEFLATE font/ttf
 		AddOutputFilterByType DEFLATE font/otf
 		AddOutputFilterByType DEFLATE font/opentype
-	# For Olders Browsers Which Can't Handle Compression
+		# For Olders Browsers Which Can't Handle Compression
 		BrowserMatch ^Mozilla/4 gzip-only-text/html
 		BrowserMatch ^Mozilla/4\.0[678] no-gzip
 		BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
