@@ -62,53 +62,53 @@ Ubrzace vas sajt i povecace vam ocenu
 
 
 
-# This solves Etag problem if needed
-Header unset ETag
-FileETag None
+## This solves Etag problem if needed ##
+    Header unset ETag
+    FileETag None
 
 
 
-# Snipets bellow are for security mostly for wordpress websites
+## Snipets bellow are for security mostly for wordpress websites ##
 
-# Disable unauthorized directory browsing 
-Options All - Indexes
+## Disable unauthorized directory browsing ##
+    Options All - Indexes
 
-# Sometimes hackers break into a WordPress site and install a backdoor. These backdoor files are often disguised as core WordPress files and are placed in /wp-includes/ or /wp-content/uploads/ folders.
-# Save the file and then upload it to your /wp-content/uploads/ and /wp-includes/ directories.
-<Files *.php>
-deny from all
-</Files>
+## Sometimes hackers break into a WordPress site and install a backdoor. These backdoor files are often disguised as core WordPress files and are placed in /wp-includes/ or /wp-content/uploads/ folders. ##
+## Save the file and then upload it to your /wp-content/uploads/ and /wp-includes/ directories. ##
+    <Files *.php>
+        deny from all
+    </Files>
 
-# Protect your wp-config.php file from unathorized access, simply add this code to your .htaccess
-<files wp-config.php>
-order allow,deny
-deny from all
-</files>
+## Protect your wp-config.php file from unathorized access, simply add this code to your .htaccess ##
+    <files wp-config.php>
+        order allow,deny
+        deny from all
+    </files>
 
-# This blocks users from accessing wp-admin so use it with caution
-# Protect .htaccess From Unauthorized Access
-<files ~ "^.*\.([Hh][Tt][Aa])">
-order allow,deny
-deny from all
-satisfy all
-</files>
-
-
-# A common technique used in brute force attacks is to run author scans on a WordPress site and then attempt to crack passwords for those usernames.
-# BEGIN block author scans
-RewriteEngine On
-RewriteBase /
-RewriteCond %{QUERY_STRING} (author=\d+) [NC]
-RewriteRule .* - [F]
-# END block author scans 
+## This blocks users from accessing wp-admin so use it with caution ##
+## Protect .htaccess From Unauthorized Access ##
+    <files ~ "^.*\.([Hh][Tt][Aa])">
+        order allow,deny
+        deny from all
+        satisfy all
+    </files>
 
 
-# Disable the Server Signature
-ServerSignature Off
+## A common technique used in brute force attacks is to run author scans on a WordPress site and then attempt to crack passwords for those usernames. ##
+## BEGIN block author scans ##
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{QUERY_STRING} (author=\d+) [NC]
+    RewriteRule .* - [F]
+## END block author scans ##
 
 
-# Block access to multiple file types
-<FilesMatch "\.(htaccess|htpasswd|ini|psd|log|sh)$">
-Order allow, deny
-Deny from all
+## Disable the Server Signature ##
+    ServerSignature Off
+
+
+## Block access to multiple file types ##
+    <FilesMatch "\.(htaccess|htpasswd|ini|psd|log|sh)$">
+    Order allow, deny
+    Deny from all
 </FilesMatch>
