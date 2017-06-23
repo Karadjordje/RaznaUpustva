@@ -108,7 +108,7 @@ Ubrzace vas sajt i povecace vam ocenu
 
 
 ## Block access to multiple file types ##
-    <FilesMatch "\.(htaccess|htpasswd|ini|psd|log|sh)$">
-    Order allow, deny
-    Deny from all
-</FilesMatch>
+	<FilesMatch "\.(htaccess|htpasswd|ini|psd|log|sh)$">
+    	Order allow, deny
+    	Deny from all
+	</FilesMatch>
