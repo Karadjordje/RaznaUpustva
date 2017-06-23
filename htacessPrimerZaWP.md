@@ -5,6 +5,8 @@ https://www.hireawiz.com/wordpress-optimization-guide
 Kod ispod ce resiti:
 1. Leverage browser caching
 2. Enable gzip compression
+3. Ima mali dodatak koji resava ETag
+4. Ima deo za bezbednost sajta
 Ubrzace vas sajt i povecace vam ocenu
 
 
