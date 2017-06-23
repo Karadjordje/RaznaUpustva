@@ -65,48 +65,48 @@ Ubrzace vas sajt i povecace vam ocenu
 ## This solves Etag problem if needed ##
     Header unset ETag
     FileETag None
-
+<hr>
 
 
 # Snipets bellow are for security mostly for wordpress websites #
 
 ## Disable unauthorized directory browsing ##
     Options All - Indexes
-
+<hr>
 ## Sometimes hackers break into a WordPress site and install a backdoor. These backdoor files are often disguised as core WordPress files and are placed in /wp-includes/ or /wp-content/uploads/ folders. ##
-## Save the file and then upload it to your /wp-content/uploads/ and /wp-includes/ directories. ##
+# Save the file and then upload it to your /wp-content/uploads/ and /wp-includes/ directories. #
     <Files *.php>
         deny from all
     </Files>
-
+<hr>
 ## Protect your wp-config.php file from unathorized access, simply add this code to your .htaccess ##
     <files wp-config.php>
         order allow,deny
         deny from all
     </files>
-
+<hr>
 ## This blocks users from accessing wp-admin so use it with caution ##
-## Protect .htaccess From Unauthorized Access ##
+# Protect .htaccess From Unauthorized Access #
     <files ~ "^.*\.([Hh][Tt][Aa])">
         order allow,deny
         deny from all
         satisfy all
     </files>
 
-
+<hr>
 ## A common technique used in brute force attacks is to run author scans on a WordPress site and then attempt to crack passwords for those usernames. ##
-## BEGIN block author scans ##
+# BEGIN block author scans #
     RewriteEngine On
     RewriteBase /
     RewriteCond %{QUERY_STRING} (author=\d+) [NC]
     RewriteRule .* - [F]
-## END block author scans ##
-
+# END block author scans #
+<hr>
 
 ## Disable the Server Signature ##
     ServerSignature Off
 
-
+<hr>
 ## Block access to multiple file types ##
     <FilesMatch "\.(htaccess|htpasswd|ini|psd|log|sh)$">
     Order allow, deny
