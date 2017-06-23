@@ -53,7 +53,7 @@ Ubrzace vas sajt i povecace vam ocenu
         AddOutputFilterByType DEFLATE text/plain
         AddOutputFilterByType DEFLATE text/xml
 
-# Remove browser bugs (only needed for really old browsers)
+## Remove browser bugs (only needed for really old browsers) ##
         BrowserMatch ^Mozilla/4 gzip-only-text/html
         BrowserMatch ^Mozilla/4\.0[678] no-gzip
         BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
@@ -68,7 +68,7 @@ Ubrzace vas sajt i povecace vam ocenu
 
 
 
-## Snipets bellow are for security mostly for wordpress websites ##
+# Snipets bellow are for security mostly for wordpress websites #
 
 ## Disable unauthorized directory browsing ##
     Options All - Indexes
