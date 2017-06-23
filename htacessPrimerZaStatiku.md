@@ -10,9 +10,9 @@ Ubrzace vas sajt i povecace vam ocenu
 
 ## EXPIRES CACHING ##
     <IfModule mod_expires.c>
-    # Enable expirations
+        # Enable expirations
         ExpiresActive On 
-    # Default directive
+        # Default directive
         ExpiresDefault "access plus 1 month"
 
         ExpiresActive On
@@ -26,9 +26,9 @@ Ubrzace vas sajt i povecace vam ocenu
         ExpiresByType text/x-javascript "access plus 1 month"
         ExpiresByType application/x-shockwave-flash "access plus 1 month"
         ExpiresByType image/x-icon "access plus 1 year"
-</IfModule>
-## EXPIRES CACHING ##
+    </IfModule>
 
+## EXPIRES CACHING ##
     <IfModule mod_deflate.c>
         # Compress HTML, CSS, JavaScript, Text, XML and fonts
         AddOutputFilterByType DEFLATE application/javascript
